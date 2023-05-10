@@ -16,7 +16,7 @@ git config --global user.email "name@example.com"
 # login and push repo
 
 git add .
-git commit -m "plz logout"
+git commit -m "done logout"
 git push origin main
  
 
