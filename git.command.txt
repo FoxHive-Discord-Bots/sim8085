@@ -1,0 +1,25 @@
+## just copy and paste this on terminal 
+
+
+# pre setup
+
+git init
+git config --global user.name "hachimetsu"
+git config --global user.email "hachimetsu@gmail.com"
+
+
+# login and push repo
+
+git add .
+git commit -m "comment here"
+git push origin main
+ 
+
+# remove account when work is done
+
+git config --unset credential.helper
+
+# confirm logout
+
+git config --get credential.helper
+
