@@ -1,0 +1,11 @@
+@echo off
+
+git init
+git config --global user.name "name_here"
+git config --global user.email "name@example.com"
+
+git add .
+
+git commit -m "comment here"
+
+git push origin master

@@ -1,5 +1,5 @@
-require('dotenv').config();// to use evnironment variables  in locan system
 const path = require("path");
+require('dotenv').config();// to use evnironment variables  in locan system
 
 const {
     yoruToken: TOKEN,
