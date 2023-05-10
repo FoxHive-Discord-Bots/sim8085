@@ -11,7 +11,7 @@ git config --global user.email "hachimetsu@gmail.com"
 # login and push repo
 
 git add .
-git commit -m "check logout"
+git commit -m "plz logout"
 git push origin main
  
 
