@@ -1,5 +1,5 @@
-const fs = require("node:fs");
 const path = require("node:path");
+const fs = require("node:fs");
 
 const { TOKEN, clientID, adminID, guildID, databaseURL, commandsDeployment, eventsPath, commandsPath } =  require("./init.js");
 const {
