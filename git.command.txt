@@ -7,16 +7,10 @@ git init
 git config --global user.name "hachimetsu"
 git config --global user.email "hachimetsu@gmail.com"
 
-git init
-git config --global user.name "name"
-git config --global user.email "name@example.com"
-
-
-
 # login and push repo
 
 git add .
-git commit -m "done logout"
+git commit -m "messageCreate.js regex need update"
 git push origin main
  
 
@@ -27,4 +21,6 @@ git config --unset credential.helper
 # confirm logout
 
 git config --get credential.helper
+
+# check in Credential Manager to confirm account is removed if not remove it manually
 

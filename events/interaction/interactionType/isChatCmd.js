@@ -10,7 +10,7 @@ async function isChatCmd(client, interaction) {
         });
         return;
     }
-    try { await command.execute(interaction); }//trying to exicute found command codded in commands folder  
+    try { await command.execute(client, interaction, null); }//trying to exicute found command codded in commands folder  
     catch (error) {
         console.error(error);
         await interaction.reply({
@@ -19,5 +19,5 @@ async function isChatCmd(client, interaction) {
         });
     }
 }
-
+ 
 module.exports = { isChatCmd };

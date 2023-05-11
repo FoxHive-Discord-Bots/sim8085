@@ -8,7 +8,6 @@ const {
     mongodbURI: databaseURL,
     serverID: guildID,
     commandsDeployment,
-    prefix
 } = process.env; //using evnironment variables 
 
 const colors = {
@@ -25,10 +24,11 @@ const colors = {
 
 //show Errors in color combination
 console.showError = function (error) {
-    console.colorLog({ para: `\n${error.name} : ${error.message}` });
-    console.colorLog({ para: `File: ${__filename}` });
-    console.colorLog({ para: `Line: ${error.stack.split('\n')[1].split(':')[1]}\n` });
-    // console.colorLog({ para: error.stack });
+    // console.colorLog({ para: `\n${error.name} : ${error.message}` });
+    // console.colorLog({ para: `File: ${__filename}` });
+    // console.colorLog({ para: `Line: ${error.stack.split('\n')[1].split(':')[1]}\n` });
+    console.colorLog({ para: error.stack });
+    console.log(error);
 }
 
 //custom function to show output o terminal in color 
@@ -48,4 +48,4 @@ console.colorLog = function({ fun, comt, text, imp, title, para, link, border })
 
 const eventsPath =  path.join(__dirname, "events");
 const commandsPath = path.join(__dirname, "commands");
-module.exports = { TOKEN, clientID, adminID, databaseURL, guildID, commandsDeployment, eventsPath, commandsPath, prefix };
+module.exports = { TOKEN, clientID, adminID, databaseURL, guildID, commandsDeployment, eventsPath, commandsPath };
